@@ -1,0 +1,67 @@
+.home-grid {
+    display: grid;
+    grid-template-columns: 20vw 20vw;
+    grid-template-rows: 15vw 15vw 15vw 15vw;
+    grid-template-areas:
+        "title title"
+        "img1 txt1"
+        "txt2 img2"
+        "img3 txt3";
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-title {
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-img1 {
+    grid-area: img1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid-txt1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #f2aaca;
+    text-align: center;
+}
+.grid-txt2 {
+    grid-area: txt2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #f2aaca;
+    text-align: center;
+}
+.grid-img2 {
+    grid-area: img2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #f2aaca;
+}
+.grid-img3 {
+    grid-area: img3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid-txt3 {
+    grid-area: txt3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #f2aaca;
+    text-align: center;
+}
+.images {
+    height: 150px;
+    width: 300px;
+}
