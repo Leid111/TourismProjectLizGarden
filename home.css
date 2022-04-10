@@ -1,7 +1,7 @@
 .home-grid {
     display: grid;
-    grid-template-columns: 20vw 20vw;
-    grid-template-rows: 15vw 15vw 15vw 15vw;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 5vw 20vw 20vw 20vw;
     grid-template-areas:
         "title title"
         "img1 txt1"
@@ -20,31 +20,43 @@
 .grid-img1 {
     grid-area: img1;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: stretch;
+    align-items: stretch;
+    height: 20vw;
+    width: 40vw;
 }
 
 .grid-txt1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #f2aaca;
-    text-align: center;
+    height: 20vw;
+    width: 40vw;
+}
+
+.grid-txt1 P {
+    margin: 20px;
+    padding: 20px;
+    font-size: x-large;
 }
 .grid-txt2 {
     grid-area: txt2;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #f2aaca;
-    text-align: center;
+    height: 20vw;
+    width: 40vw;
+}
+.grid-txt2 P {
+    margin: 20px;
+    padding: 20px;
+    font-size: x-large;
 }
 .grid-img2 {
     grid-area: img2;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    border: 2px solid #f2aaca;
 }
 .grid-img3 {
     grid-area: img3;
@@ -58,10 +70,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #f2aaca;
-    text-align: center;
+    height: 20vw;
+    width: 40vw;
+}
+.grid-txt3 P {
+    margin: 20px;
+    padding: 20px;
+    font-size: x-large;
 }
 .images {
-    height: 150px;
-    width: 300px;
+    height: 20vw;
+    width: 40vw;
 }
