@@ -1,3 +1,34 @@
+$primary-color: #378261;
+$secondary-color: #8bc46c;
+$accent-color: #d6e6a1;
+$primary-text: Arial, Helvetica, sans-serif;
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+.mainNav {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #378261;
+    margin: 0%;
+    padding: 0%;
+    height: 40px;
+    font-family: $primary-text;
+}
+
+nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+}
+nav > ul > li > a:hover {
+    color: #d6e6a1;
+    text-decoration: underline;
+}
+
 .home-grid {
     display: grid;
     grid-template-columns: 40vw 40vw;
@@ -9,7 +40,7 @@
         "img3 txt3";
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
+    font-family: $primary-text;
 }
 
 .grid-title {
@@ -39,7 +70,7 @@
 .grid-txt1 P {
     margin: 20px;
     padding: 20px;
-    font-size: x-large;
+    font-size: large;
 }
 .grid-txt2 {
     grid-area: txt2;
@@ -52,7 +83,7 @@
 .grid-txt2 P {
     margin: 20px;
     padding: 20px;
-    font-size: x-large;
+    font-size: large;
 }
 .grid-img2 {
     grid-area: img2;
@@ -78,7 +109,7 @@
 .grid-txt3 P {
     margin: 20px;
     padding: 20px;
-    font-size: x-large;
+    font-size: large;
 }
 .images {
     height: 20vw;
