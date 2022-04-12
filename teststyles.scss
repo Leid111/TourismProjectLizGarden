@@ -126,10 +126,32 @@ main > .contact-form {
     @include flex(column, center, center);
     padding: 20px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 #footer {
     @include flex(column, baseline, flex-start);
     background-color: $primary-color;
     color: white;
+}
+
+.maingallery {
+    display: flex;
+    justify-content: center;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-area: 20px;
+}
+
+.gallery > img {
+    height: 200px;
+    width: 300px;
+    padding: 10px;
+    border: 5px solid $accent-color;
+}
+
+.gallery > img:hover {
+    box-shadow: 0 32px 64px 0 $secondary-color;
 }
