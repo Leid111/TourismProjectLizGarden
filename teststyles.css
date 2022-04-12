@@ -47,14 +47,16 @@ nav > ul > li > a:hover {
 .grid-img1 {
   grid-area: img1;
   display: flex;
-  justify-content: stretch;
-  align-items: stretch;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   height: 20vw;
   width: 40vw;
 }
 
 .grid-txt1 {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 20vw;
@@ -70,6 +72,7 @@ nav > ul > li > a:hover {
 .grid-txt2 {
   grid-area: txt2;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 20vw;
@@ -85,6 +88,7 @@ nav > ul > li > a:hover {
 .grid-img2 {
   grid-area: img2;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -92,13 +96,15 @@ nav > ul > li > a:hover {
 .grid-img3 {
   grid-area: img3;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 
 .grid-txt3 {
   grid-area: txt3;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 20vw;

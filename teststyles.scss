@@ -29,6 +29,13 @@ nav > ul > li > a:hover {
     text-decoration: underline;
 }
 
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
 .home-grid {
     display: grid;
     grid-template-columns: 40vw 40vw;
@@ -45,24 +52,17 @@ nav > ul > li > a:hover {
 
 .grid-title {
     grid-area: title;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(column, center, center);
 }
 .grid-img1 {
     grid-area: img1;
-    display: flex;
-    justify-content: stretch;
-    align-items: stretch;
+    @include flex(row, center, center);
     height: 20vw;
     width: 40vw;
 }
 
 .grid-txt1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(row, center, center);
     height: 20vw;
     width: 40vw;
 }
@@ -74,9 +74,7 @@ nav > ul > li > a:hover {
 }
 .grid-txt2 {
     grid-area: txt2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(row, center, center);
     height: 20vw;
     width: 40vw;
 }
@@ -87,22 +85,16 @@ nav > ul > li > a:hover {
 }
 .grid-img2 {
     grid-area: img2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(row, center, center);
 }
 .grid-img3 {
     grid-area: img3;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(row, center, center);
 }
 
 .grid-txt3 {
     grid-area: txt3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(row, center, center);
     height: 20vw;
     width: 40vw;
 }
