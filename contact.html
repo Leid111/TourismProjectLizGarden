@@ -16,49 +16,53 @@
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
-        <header>
+        <header class="header_pagetitle">
             <h1>Contact Us - Hunter Valley Gardens</h1>
             <p>
                 A naturally beautiful experience in the heart of Hunter Valley
                 Wine Country.
             </p>
         </header>
-    
-        <form>
-            <div>
+        <br />
+        <main class="main-form">
+            <form
+                class="contact-form"
+                action="https://formspree.io/f/xpzbjnoy"
+                method="POST"
+            >
                 <label for="name"> Full Name:</label>
                 <input
-					type="text"
-					id="name"
-					name="fullName"
-					maxlength="20"
-					placeholder="Please enter your full name"
-					required
-				/>
-            <div>
-            <div>
+                    type="text"
+                    id="name"
+                    name="fullName"
+                    maxlength="20"
+                    placeholder="Please enter your full name"
+                    required
+                />
                 <label for="email">Email: </label>
                 <input type="email" id="email" required name="email" />
-            </div>
-            <div>
+
                 <label for="phone">Phone Number:</label>
-			<input
-				type="tel"
-				id="phone"
-				pattern="[0-9]{10}"
-			/>
-            </div>
-            <div>
+                <input type="tel" id="phone" pattern="[0-9]{10}" />
+
                 <label for="comment">Enquiry:</label>
                 <textarea
-				id=comment
-                placeholder="Comment"
-				rows="5"
-				cols="40"
-				required
-			></textarea>
-            </div>
+                    id="comment"
+                    placeholder="Comment"
+                    rows="5"
+                    cols="40"
+                    required
+                ></textarea>
+                <input type="reset" />
+                <input type="submit" />
             </form>
-          
+        </main>
+        <br />
+        <footer>
+            <div id="footer">
+                <p>E:eeid1@woolworths.com.au</p>
+                <p>G:git@github.com:Leid111/TourismProjectLizGarden.git</p>
+            </div>
+        </footer>
     </body>
 </html>

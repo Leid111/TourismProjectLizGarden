@@ -1,6 +1,7 @@
 * {
   padding: 0%;
   margin: 0%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .mainNav {
@@ -13,7 +14,6 @@
   margin: 0%;
   padding: 0%;
   height: 40px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 nav > ul > li > a {
@@ -33,7 +33,6 @@ nav > ul > li > a:hover {
   grid-template-areas: "title title" "img1 txt1" "txt2 img2" "img3 txt3";
   justify-content: center;
   align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .grid-title {
@@ -120,6 +119,39 @@ nav > ul > li > a:hover {
 .images {
   height: 20vw;
   width: 40vw;
+}
+
+.form {
+  border: 2px solid black;
+}
+
+.main-form {
+  display: flex;
+  justify-content: center;
+}
+
+main > .contact-form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+}
+
+.header_pagetitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: flex-start;
+  background-color: #378261;
+  color: white;
 }
 
 /*# sourceMappingURL=teststyles.css.map */
