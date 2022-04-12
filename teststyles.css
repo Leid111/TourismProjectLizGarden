@@ -1,0 +1,119 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+.mainNav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #378261;
+  margin: 0%;
+  padding: 0%;
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav > ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+nav > ul > li > a:hover {
+  color: #d6e6a1;
+  text-decoration: underline;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: 40vw 40vw;
+  grid-template-rows: 10vw 20vw 20vw 20vw;
+  grid-template-areas: "title title" "img1 txt1" "txt2 img2" "img3 txt3";
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-title {
+  grid-area: title;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-img1 {
+  grid-area: img1;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  height: 20vw;
+  width: 40vw;
+}
+
+.grid-txt1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vw;
+  width: 40vw;
+}
+
+.grid-txt1 P {
+  margin: 20px;
+  padding: 20px;
+  font-size: large;
+}
+
+.grid-txt2 {
+  grid-area: txt2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vw;
+  width: 40vw;
+}
+
+.grid-txt2 P {
+  margin: 20px;
+  padding: 20px;
+  font-size: large;
+}
+
+.grid-img2 {
+  grid-area: img2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-img3 {
+  grid-area: img3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid-txt3 {
+  grid-area: txt3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vw;
+  width: 40vw;
+}
+
+.grid-txt3 P {
+  margin: 20px;
+  padding: 20px;
+  font-size: large;
+}
+
+.images {
+  height: 20vw;
+  width: 40vw;
+}
+
+/*# sourceMappingURL=teststyles.css.map */
