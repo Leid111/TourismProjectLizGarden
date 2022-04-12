@@ -143,6 +143,7 @@ main > .contact-form {
   align-items: center;
   padding: 20px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 #footer {
@@ -152,6 +153,28 @@ main > .contact-form {
   align-items: flex-start;
   background-color: #378261;
   color: white;
+}
+
+.maingallery {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-area: 20px;
+}
+
+.gallery > img {
+  height: 200px;
+  width: 300px;
+  padding: 10px;
+  border: 5px solid #d6e6a1;
+}
+
+.gallery > img:hover {
+  box-shadow: 0 32px 64px 0 #8bc46c;
 }
 
 /*# sourceMappingURL=teststyles.css.map */
