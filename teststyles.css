@@ -34,6 +34,15 @@ nav > ul > li > a:hover {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 480px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "title" "title" "img1" "txt1" "img2" "txt2" "img3" "txt3";
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+  }
+}
 .home-grid__title {
   grid-area: title;
   display: flex;
@@ -44,6 +53,8 @@ nav > ul > li > a:hover {
 @media only screen and (max-width: 480px) {
   .home-grid__title {
     font-size: 8px;
+    margin-right: 35%;
+    text-align: center;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 869px) {
@@ -86,6 +97,11 @@ nav > ul > li > a:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 480px) {
+  .home-grid__img2 {
+    justify-content: left;
+  }
 }
 .home-grid__img3 {
   grid-area: img3;
