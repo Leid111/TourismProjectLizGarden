@@ -41,6 +41,19 @@ nav > ul > li > a:hover {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 480px) {
+  .home-grid__title {
+    font-size: 8px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 869px) {
+  .home-grid__title {
+    font-size: 8px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+}
 .home-grid__img1 {
   grid-area: img1;
   display: flex;
@@ -96,17 +109,65 @@ nav > ul > li > a:hover {
   padding: 20px;
   font-size: large;
 }
+@media only screen and (max-width: 480px) {
+  .home-grid__txt1 P {
+    font-size: 8px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 869px) {
+  .home-grid__txt1 P {
+    font-size: 12px;
+    text-align: left;
+    margin: 5px;
+    padding: 5px;
+  }
+}
 
 .home-grid__txt2 P {
   margin: 20px;
   padding: 20px;
   font-size: large;
 }
+@media only screen and (max-width: 480px) {
+  .home-grid__txt2 P {
+    font-size: 8px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 869px) {
+  .home-grid__txt2 P {
+    font-size: 8px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+}
 
 .home-grid__txt3 P {
   margin: 20px;
   padding: 20px;
   font-size: large;
+}
+@media only screen and (max-width: 480px) {
+  .home-grid__txt3 P {
+    font-size: 8px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 869px) {
+  .home-grid__txt3 P {
+    font-size: 12px;
+    text-align: left;
+    margin: 5px;
+    padding: 5px;
+  }
 }
 
 .images {
@@ -144,8 +205,7 @@ main > .contact-form {
   bottom: 0;
   margin-top: 10px;
 }
-
-.thefooter {
+.pageFooter__content {
   display: flex;
   flex-direction: column;
   justify-content: baseline;
