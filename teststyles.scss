@@ -1,7 +1,4 @@
-$primary-color: #378261;
-$secondary-color: #8bc46c;
-$accent-color: #d6e6a1;
-$primary-text: Arial, Helvetica, sans-serif;
+@use "colortext" as *;
 
 * {
     padding: 0%;
@@ -10,10 +7,7 @@ $primary-text: Arial, Helvetica, sans-serif;
 }
 .mainNav {
     list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    @include flex(row, space-around, center);
     background-color: #378261;
     margin: 0%;
     padding: 0%;
@@ -29,13 +23,6 @@ nav > ul > li > a:hover {
     text-decoration: underline;
 }
 
-@mixin flex($direction, $justify, $align) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
-}
-
 .home-grid {
     display: grid;
     grid-template-columns: 40vw 40vw;
@@ -47,57 +34,58 @@ nav > ul > li > a:hover {
         "img3 txt3";
     justify-content: center;
     align-items: center;
+
+    &__title {
+        grid-area: title;
+        @include flex(column, center, center);
+    }
+    &__img1 {
+        grid-area: img1;
+        @include flex(row, center, center);
+        height: 20vw;
+        width: 40vw;
+    }
+    &__txt1 {
+        @include flex(row, center, center);
+        height: 20vw;
+        width: 40vw;
+    }
+
+    &__txt2 {
+        grid-area: txt2;
+        @include flex(row, center, center);
+        height: 20vw;
+        width: 40vw;
+    }
+    &__img2 {
+        grid-area: img2;
+        @include flex(row, center, center);
+    }
+    &__img3 {
+        grid-area: img3;
+        @include flex(row, center, center);
+    }
+    &__txt3 {
+        grid-area: txt3;
+        @include flex(row, center, center);
+        height: 20vw;
+        width: 40vw;
+    }
 }
 
-.grid-title {
-    grid-area: title;
-    @include flex(column, center, center);
-}
-.grid-img1 {
-    grid-area: img1;
-    @include flex(row, center, center);
-    height: 20vw;
-    width: 40vw;
-}
-
-.grid-txt1 {
-    @include flex(row, center, center);
-    height: 20vw;
-    width: 40vw;
-}
-
-.grid-txt1 P {
+.home-grid__txt1 P {
     margin: 20px;
     padding: 20px;
     font-size: large;
 }
-.grid-txt2 {
-    grid-area: txt2;
-    @include flex(row, center, center);
-    height: 20vw;
-    width: 40vw;
-}
-.grid-txt2 P {
+
+.home-grid__txt2 P {
     margin: 20px;
     padding: 20px;
     font-size: large;
 }
-.grid-img2 {
-    grid-area: img2;
-    @include flex(row, center, center);
-}
-.grid-img3 {
-    grid-area: img3;
-    @include flex(row, center, center);
-}
 
-.grid-txt3 {
-    grid-area: txt3;
-    @include flex(row, center, center);
-    height: 20vw;
-    width: 40vw;
-}
-.grid-txt3 P {
+.home-grid__txt3 P {
     margin: 20px;
     padding: 20px;
     font-size: large;
@@ -129,10 +117,17 @@ main > .contact-form {
     margin-top: 20px;
 }
 
-#footer {
+.pageFooter {
+    position: static;
+    bottom: 0;
+    margin-top: 10px;
+}
+
+.thefooter {
     @include flex(column, baseline, flex-start);
     background-color: $primary-color;
     color: white;
+    padding: 5px;
 }
 
 .maingallery {
@@ -154,4 +149,22 @@ main > .contact-form {
 
 .gallery > img:hover {
     box-shadow: 0 32px 64px 0 $secondary-color;
+}
+
+.button {
+    background-color: $primary-color;
+    border: 4px solid $secondary-color;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    &:hover {
+        background-color: $accent-color;
+    }
+}
+
+.contactimage {
+    height: 250px;
+    width: 400px;
+    margin-top: 20px;
 }
