@@ -34,16 +34,14 @@ nav > ul > li > a:hover {
   justify-content: center;
   align-items: center;
 }
-
-.grid-title {
+.home-grid__title {
   grid-area: title;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-.grid-img1 {
+.home-grid__img1 {
   grid-area: img1;
   display: flex;
   flex-direction: row;
@@ -52,8 +50,7 @@ nav > ul > li > a:hover {
   height: 20vw;
   width: 40vw;
 }
-
-.grid-txt1 {
+.home-grid__txt1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -61,14 +58,7 @@ nav > ul > li > a:hover {
   height: 20vw;
   width: 40vw;
 }
-
-.grid-txt1 P {
-  margin: 20px;
-  padding: 20px;
-  font-size: large;
-}
-
-.grid-txt2 {
+.home-grid__txt2 {
   grid-area: txt2;
   display: flex;
   flex-direction: row;
@@ -77,30 +67,21 @@ nav > ul > li > a:hover {
   height: 20vw;
   width: 40vw;
 }
-
-.grid-txt2 P {
-  margin: 20px;
-  padding: 20px;
-  font-size: large;
-}
-
-.grid-img2 {
+.home-grid__img2 {
   grid-area: img2;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-
-.grid-img3 {
+.home-grid__img3 {
   grid-area: img3;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-
-.grid-txt3 {
+.home-grid__txt3 {
   grid-area: txt3;
   display: flex;
   flex-direction: row;
@@ -110,7 +91,19 @@ nav > ul > li > a:hover {
   width: 40vw;
 }
 
-.grid-txt3 P {
+.home-grid__txt1 P {
+  margin: 20px;
+  padding: 20px;
+  font-size: large;
+}
+
+.home-grid__txt2 P {
+  margin: 20px;
+  padding: 20px;
+  font-size: large;
+}
+
+.home-grid__txt3 P {
   margin: 20px;
   padding: 20px;
   font-size: large;
@@ -146,13 +139,20 @@ main > .contact-form {
   margin-top: 20px;
 }
 
-#footer {
+.pageFooter {
+  position: static;
+  bottom: 0;
+  margin-top: 10px;
+}
+
+.thefooter {
   display: flex;
   flex-direction: column;
   justify-content: baseline;
   align-items: flex-start;
   background-color: #378261;
   color: white;
+  padding: 5px;
 }
 
 .maingallery {
@@ -175,6 +175,24 @@ main > .contact-form {
 
 .gallery > img:hover {
   box-shadow: 0 32px 64px 0 #8bc46c;
+}
+
+.button {
+  background-color: #378261;
+  border: 4px solid #8bc46c;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+}
+.button:hover {
+  background-color: #d6e6a1;
+}
+
+.contactimage {
+  height: 250px;
+  width: 400px;
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=teststyles.css.map */

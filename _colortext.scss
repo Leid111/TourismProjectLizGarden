@@ -1,0 +1,11 @@
+$primary-color: #378261;
+$secondary-color: #8bc46c;
+$accent-color: #d6e6a1;
+$primary-text: Arial, Helvetica, sans-serif;
+
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
