@@ -1,4 +1,4 @@
-@use "colortext" as *;
+@use "variablesMixins" as *;
 
 * {
     padding: 0%;
@@ -38,6 +38,15 @@ nav > ul > li > a:hover {
     &__title {
         grid-area: title;
         @include flex(column, center, center);
+        @media only screen and (max-width: 480px) {
+            font-size: 8px;
+        }
+        @media only screen and (min-width: 481px) and (max-width: 869px) {
+            font-size: 8px;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+        }
     }
     &__img1 {
         grid-area: img1;
@@ -74,21 +83,51 @@ nav > ul > li > a:hover {
 }
 
 .home-grid__txt1 P {
-    margin: 20px;
-    padding: 20px;
-    font-size: large;
+    @include bodytxt;
+    @media only screen and (max-width: 480px) {
+        font-size: 8px;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+    @media only screen and (min-width: 481px) and (max-width: 869px) {
+        font-size: 12px;
+        text-align: left;
+        margin: 5px;
+        padding: 5px;
+    }
 }
 
 .home-grid__txt2 P {
-    margin: 20px;
-    padding: 20px;
-    font-size: large;
+    @include bodytxt;
+    @media only screen and (max-width: 480px) {
+        font-size: 8px;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+    @media only screen and (min-width: 481px) and (max-width: 869px) {
+        font-size: 8px;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .home-grid__txt3 P {
-    margin: 20px;
-    padding: 20px;
-    font-size: large;
+    @include bodytxt;
+    @media only screen and (max-width: 480px) {
+        font-size: 8px;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+    @media only screen and (min-width: 481px) and (max-width: 869px) {
+        font-size: 12px;
+        text-align: left;
+        margin: 5px;
+        padding: 5px;
+    }
 }
 .images {
     height: 20vw;
@@ -121,13 +160,13 @@ main > .contact-form {
     position: static;
     bottom: 0;
     margin-top: 10px;
-}
 
-.thefooter {
-    @include flex(column, baseline, flex-start);
-    background-color: $primary-color;
-    color: white;
-    padding: 5px;
+    &__content {
+        @include flex(column, baseline, flex-start);
+        background-color: $primary-color;
+        color: white;
+        padding: 5px;
+    }
 }
 
 .maingallery {

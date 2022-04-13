@@ -9,3 +9,9 @@ $primary-text: Arial, Helvetica, sans-serif;
     justify-content: $justify;
     align-items: $align;
 }
+
+@mixin bodytxt {
+    margin: 20px;
+    padding: 20px;
+    font-size: large;
+}
