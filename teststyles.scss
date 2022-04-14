@@ -214,25 +214,29 @@ main > .contact-form {
     }
 }
 
-.maingallery {
+.container {
     display: flex;
     justify-content: center;
 }
+
 .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-area: 20px;
-}
+    grid-gap: 5px;
+    margin-bottom: 25px;
 
-.gallery > img {
-    height: 200px;
-    width: 300px;
-    padding: 10px;
-    border: 5px solid $accent-color;
-}
-
-.gallery > img:hover {
-    box-shadow: 0 32px 64px 0 $secondary-color;
+    &__img {
+        height: 200px;
+        width: 300px;
+        padding: 10px;
+        border: 5px solid $accent-color;
+    }
+    &__img--hover:hover {
+        box-shadow: 0 32px 64px 0 $secondary-color;
+    }
+    @media only screen and (max-width: 700px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .button {
