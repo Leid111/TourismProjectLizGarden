@@ -15,3 +15,21 @@ $primary-text: Arial, Helvetica, sans-serif;
     padding: 20px;
     font-size: large;
 }
+
+.mainNav {
+    list-style-type: none;
+    @include flex(row, space-around, center);
+    background-color: #378261;
+    margin: 0%;
+    padding: 0%;
+    height: 40px;
+
+    &__links {
+        color: white;
+        text-decoration: none;
+    }
+    &__links--highlighted:hover {
+        color: #d6e6a1;
+        text-decoration: underline;
+    }
+}
