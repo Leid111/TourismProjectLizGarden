@@ -105,49 +105,30 @@
 
 .home-grid__txt1 P {
     @include bodytxt;
-    @media only screen and (max-width: 480px) {
-        font-size: 8px;
-        text-align: left;
-        margin: 0;
-        padding: 0;
-    }
-    @media only screen and (min-width: 481px) and (max-width: 869px) {
-        font-size: 12px;
-        text-align: left;
-        margin: 5px;
-        padding: 5px;
+    @include phonetxt;
+    @include tablettxt;
+
+    @media only screen and (min-width: (1200 + 1px)) {
+        font-size: larger;
     }
 }
 
 .home-grid__txt2 P {
     @include bodytxt;
-    @media only screen and (max-width: 480px) {
-        font-size: 8px;
-        text-align: left;
-        margin: 0;
-        padding: 0;
-    }
-    @media only screen and (min-width: 481px) and (max-width: 869px) {
-        font-size: 8px;
-        text-align: left;
-        margin: 0;
-        padding: 0;
+    @include phonetxt;
+    @include tablettxt;
+
+    @media only screen and (min-width: (1200 + 1px)) {
+        font-size: larger;
     }
 }
 
 .home-grid__txt3 P {
     @include bodytxt;
-    @media only screen and (max-width: 480px) {
-        font-size: 8px;
-        text-align: left;
-        margin: 0;
-        padding: 0;
-    }
-    @media only screen and (min-width: 481px) and (max-width: 869px) {
-        font-size: 12px;
-        text-align: left;
-        margin: 5px;
-        padding: 5px;
+    @include phonetxt;
+    @include tablettxt;
+    @media only screen and (min-width: (1200 + 1px)) {
+        font-size: larger;
     }
 }
 .images {
@@ -188,7 +169,7 @@ iframe {
     justify-content: center;
 }
 
-main > .contact-form {
+.contact-form {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 10px;

@@ -139,6 +139,11 @@
     padding: 5px;
   }
 }
+@media only screen and (min-width: 1201px) {
+  .home-grid__txt1 P {
+    font-size: larger;
+  }
+}
 
 .home-grid__txt2 P {
   margin: 20px;
@@ -155,10 +160,15 @@
 }
 @media only screen and (min-width: 481px) and (max-width: 869px) {
   .home-grid__txt2 P {
-    font-size: 8px;
+    font-size: 12px;
     text-align: left;
-    margin: 0;
-    padding: 0;
+    margin: 5px;
+    padding: 5px;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .home-grid__txt2 P {
+    font-size: larger;
   }
 }
 
@@ -181,6 +191,11 @@
     text-align: left;
     margin: 5px;
     padding: 5px;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .home-grid__txt3 P {
+    font-size: larger;
   }
 }
 
@@ -226,7 +241,7 @@
   justify-content: center;
 }
 
-main > .contact-form {
+.contact-form {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: 10px;
