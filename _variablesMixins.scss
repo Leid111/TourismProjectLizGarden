@@ -33,3 +33,25 @@ $primary-text: Arial, Helvetica, sans-serif;
         padding: 5px;
     }
 }
+
+@mixin gallerytitle {
+    text-align: center;
+    position: relative;
+    bottom: 50%;
+    transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    color: white;
+    font-family: Arial;
+    display: none;
+}
+
+@mixin galleryhoverimg {
+    box-shadow: 0 32px 64px 0 $secondary-color;
+    filter: brightness(100%);
+}
+
+@mixin galleryhovertxt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
