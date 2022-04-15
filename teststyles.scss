@@ -212,9 +212,19 @@ iframe {
         padding: 10px;
         border: 5px solid $accent-color;
     }
-    &__img--hover:hover {
-        box-shadow: 0 32px 64px 0 $secondary-color;
+
+    .gardentitle h2 {
+        @include gallerytitle;
     }
+
+    .gardentitle:hover img {
+        @include galleryhoverimg;
+    }
+
+    .gardentitle:hover h2 {
+        @include galleryhovertxt;
+    }
+
     @media only screen and (max-width: 700px) {
         grid-template-columns: 1fr;
     }
