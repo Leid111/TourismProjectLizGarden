@@ -254,14 +254,14 @@
 }
 
 .pageFooter {
-  position: static;
+  position: fixed;
   bottom: 0;
-  margin-top: 10px;
+  width: 100%;
 }
 .pageFooter__content {
   display: flex;
   flex-direction: column;
-  justify-content: baseline;
+  justify-content: center;
   align-items: flex-start;
   background-color: #378261;
   color: white;

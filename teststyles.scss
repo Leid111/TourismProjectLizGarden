@@ -179,12 +179,12 @@ iframe {
 }
 
 .pageFooter {
-    position: static;
+    position: fixed;
     bottom: 0;
-    margin-top: 10px;
+    width: 100%;
 
     &__content {
-        @include flex(column, baseline, flex-start);
+        @include flex(column, center, flex-start);
         background-color: $primary-color;
         color: white;
         padding: 5px;
