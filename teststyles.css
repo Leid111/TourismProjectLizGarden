@@ -258,6 +258,13 @@
   bottom: 0;
   width: 100%;
 }
+@media only screen and (max-width: 630px) {
+  .pageFooter {
+    position: static;
+    bottom: 0;
+    width: 100%;
+  }
+}
 .pageFooter__content {
   display: flex;
   flex-direction: column;
